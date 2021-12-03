@@ -15,7 +15,7 @@ class Passenger extends Model
         'age',
     ];
 
-    public function flight(){
+    public function flights(){
         return $this->belongsToMany(Flight::class)->withTimestamps()->withPivot('ticket');
     }
 }

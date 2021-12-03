@@ -13,7 +13,7 @@
         @csrf
         <select name="passenger">
             @foreach($pasageros as $pas)
-                <option value="{{$pas->id}}">{{$pas->name}}</option>
+                <option  value="{{$pas->id}}">{{$pas->name}}</option>
             @endforeach
         </select>
 

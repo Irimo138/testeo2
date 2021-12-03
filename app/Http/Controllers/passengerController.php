@@ -72,7 +72,7 @@ class passengerController extends Controller
         $tic = $request->ticket;
         $pasagero = Passenger::find($pas);
 
-        $pasagero->flight()->attach($fli, ['ticket' => $tic]);
+        $pasagero->flights()->attach($fli,['ticket' => $tic]);
         
         return redirect('/');
     }

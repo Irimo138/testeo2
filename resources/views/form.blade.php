@@ -1,10 +1,10 @@
 <form action="/store" method="post">
     @csrf
-    <input type="text" name="Name">
+    <label>Name:<input type="text" name="Name"></label>
     <br>
-    <input type="text" name="dni">
+    <label>DNI<input type="text" name="dni"></label>
     <br>
-    <input type="number" name="age">
+    <label>age<input type="number" name="age"></label>
     <br>
     <input type="submit" value="Submit">
 </form>

@@ -17,11 +17,11 @@ class FlightPassenger extends Migration
             $table->id();
             $table->unsignedBigInteger('flight_id');
             $table->foreign('flight_id')->references('id')->on('flights');
-            $table->unsignedBigInteger('passengers_id');
-            $table->foreign('passengers_id')->references('id')->on('passengers');
-            $table->timestamp('last_used_at')->nullable();
+            $table->unsignedBigInteger('passenger_id');
+            $table->foreign('passenger_id')->references('id')->on('passengers');
             $table->integer('ticket');
             $table->timestamps();
+            $table->timestamp('last_used_at')->nullable();
         });
     }
 
